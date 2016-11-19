@@ -1,0 +1,12 @@
+<ion-view view-title="Nearby locations" hide-back-button="true" cache-view="false">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="place in vm.places" class="item-thumbnail-left" ui-sref="place({place_id: place.place_id})">
+        <img ng-src="{{place.icon}}" />
+        <h2>{{place.name}}</h2>
+        <p>{{place.formatted_address}}</p>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll on-infinite="vm.load()" ng-if="vm.canLoad" immediate-check="false"></ion-infinite-scroll>
+  </ion-content>
+</ion-view>
