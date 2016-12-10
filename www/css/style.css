@@ -1,0 +1,50 @@
+#main-background {
+    background: url('../img/american.jpg');
+    background-size: cover;
+}
+
+.round-button {
+	width:50%;
+}
+.round-button-circle {
+	width: 100%;
+	height:0;
+	padding-bottom: 100%;
+    border-radius: 50%;
+	border:10px solid #f83e16;
+    overflow:hidden;
+    
+    background: rgba(197, 52, 52, 0.8);
+    box-shadow: 0 0 3px #e90000;
+}
+.round-button-circle:hover {
+	background:#e90000;
+}
+.round-button a {
+    display:block;
+	float:left;
+	width:100%;
+	padding-top:50%;
+    padding-bottom:50%;
+	line-height:1em;
+	margin-top:-1em;
+    
+	text-align:center;
+	color:#e2eaf3;
+    font-family:Verdana;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+
+.round-button a .icon {
+    color:#e6c721;
+    font-size: 64px;
+} 
+/*https://demo.responsive.menu/free-example-one/wp-content/uploads/sites/9/2016/09/polygon-background10-preview.jpg*/
+
+.item-content {
+    background-color: #e90000;
+    padding: 15px;
+}
